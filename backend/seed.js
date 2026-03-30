@@ -1,5 +1,5 @@
 
-require('dotenv').config({ path: 'C:\\Users\\HP\\OneDrive\\Desktop\\codeforge\\backend\\.env' });
+require('dotenv').config();
 const mongoose = require('mongoose');
 const Course = require('./models/Course');
 const { seedData } = require('./data/seed');
