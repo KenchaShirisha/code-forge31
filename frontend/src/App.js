@@ -4,6 +4,7 @@ import { AuthProvider } from './context/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
 import Navbar from './components/Navbar';
 import Login from './pages/Login';
+import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import CoursePage from './pages/CoursePage';
 import ProblemPage from './pages/ProblemPage';
@@ -19,7 +20,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Navigate to="/login" />} />
+          <Route path="/register" element={<Register />} />
           <Route path="/*" element={<AuthenticatedLayout />} />
         </Routes>
       </BrowserRouter>

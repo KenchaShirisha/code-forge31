@@ -1,7 +1,9 @@
 import axios from 'axios';
 
+const BASE_URL = 'https://code-forge31-1.onrender.com/api';
+
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || 'http://localhost:5000/api',
+  baseURL: BASE_URL,
   withCredentials: false,
 });
 
